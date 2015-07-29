@@ -1,0 +1,301 @@
+---
+  name: "Geography Class 2"
+  description: "One of the example maps that comes with TileMill - a bright & colorful world map that blends retro and high-tech with its folded paper texture and interactive flag tooltips. "
+  attribution: ""
+
+  scale: 1
+  metatile: 4
+  format: "png24"
+  
+  bounds: 
+    - -180
+    - -85.0511
+    - 180
+    - 85.0511
+  center: 
+    - 0
+    - 20
+    - 3
+
+  minzoom: 0
+  maxzoom: 12
+  srs: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+
+  Stylesheet: 
+    - "style.mss"
+    - "labels.mss"
+    - "rainbow.mss"
+  Layer: 
+    - id: "terrain"
+      name: "terrain"
+      geometry: "raster"
+      extent: 
+        - -180
+        - -85.051
+        - 180
+        - 85.051
+      class: ""
+      Datasource: 
+        file: "layers/terrain/SR_HR_retiled.tif"
+        type: "gdal"
+      layer: null
+      srs-name: "WGS84"
+      srs: "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      advanced: {} 
+      status: "on"
+    - id: "slope"
+      name: "slope"
+      geometry: "raster"
+      extent: 
+        - -180
+        - -85.051
+        - 180
+        - 85.051
+      class: ""
+      Datasource: 
+        file: "layers/terrain/eu25_retiled.tif"
+        type: "gdal"
+      layer: null
+      srs-name: "900913"
+      srs: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      advanced: {} 
+      status: "on"
+      
+    - id: "tint-bands"
+      name: "tint-bands"
+      geometry: "polygon"
+      extent: 
+        - -179.99978348919964
+        - -85.051
+        - 180
+        - 83.63381093402977
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/tint-bands/82945364-10m-admin-0-countries.shp"
+        type: "shape"
+      layer: null
+      srs-name: "autodetect"
+      srs: ""
+      advanced: {}
+      status: "on"
+    - id: "ocean"
+      geometry: "polygon"
+      extent: 
+        - -179.99998938710382
+        - -85.051
+        - 179.99999
+        - 85.051
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/ocean/fd7da679-10m-ocean.shp"
+        type: "shape"
+      layer: null
+      srs-name: "autodetect"
+      srs: ""
+      advanced: {}
+      name: "ocean"
+      status: "on"
+    - id: "bath"
+      geometry: "polygon"
+      extent: 
+        - -180
+        - -85.051
+        - 180
+        - 85.051
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/bath/c22966e3-10m-bathymetry.shp"
+        type: "shape"
+      layer: null
+      srs-name: "autodetect"
+      srs: ""
+      advanced: {}
+      name: "bath"
+      status: "on"
+    - id: "country"
+      name: "country"
+      srs: ""
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/country/82945364-10m-admin-0-countries.shp"
+        type: "shape"
+      geometry: "polygon"
+      status: "on"
+    - id: "rivers"
+      name: "rivers"
+      srs: ""
+      class: ""
+      geometry: "linestring"
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/rivers/1b70dba2-10m-rivers-lake-centerlines.shp"
+        type: "shape"
+      status: "on"
+    - id: "lakes"
+      name: "lakes"
+      srs: ""
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/lakes/da493aa5-10m-lakes.shp"
+        type: "shape"
+        id: "lakes"
+        project: "geography-class"
+        srs: null
+      geometry: "polygon"
+      status: "on"
+    - id: "state"
+      name: "state"
+      srs: ""
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/state/80b26bd1-10m-admin-1-states-provinces-lines.shp"
+        id: "state"
+        project: "geography-class"
+        srs: ""
+        type: "shape"
+      geometry: "linestring"
+      extent: 
+        - -139.0471919422785
+        - -49.250740248410615
+        - 178.44862226797608
+        - 81.13822602001464
+      status: "on"
+    - id: "admin-0-line-disputed"
+      name: "admin-0-line-disputed"
+      srs: ""
+      class: "border disputed"
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/admin-0-line-disputed/d252fe6e-10m-admin-0-boundary-lines-claims.shp"
+        type: "shape"
+      geometry: "linestring"
+      status: "on"
+    - id: "admin-0-line-land"
+      name: "admin-0-line-land"
+      srs: ""
+      class: "border country"
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/admin-0-line-land/16c795c6-10m-admin-0-boundary-lines-land.shp"
+        id: "admin-0-line-land"
+        project: "geography-class"
+        srs: ""
+        type: "shape"
+      geometry: "linestring"
+      status: "on"
+    - id: "glacier"
+      name: "glacier"
+      srs: ""
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/glacier/1938858a-10m-glaciated-areas.shp"
+        type: "shape"
+      geometry: "polygon"
+      status: "on"
+    - id: "geo-lines"
+      name: "geo-lines"
+      srs: ""
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/geo-lines/0d81b6b2-10m-geographic-lines.shp"
+        id: "geo-lines"
+        project: "geography-class"
+        srs: ""
+        type: "shape"
+      geometry: "linestring"
+      extent: 
+        - -180
+        - -85.051
+        - 179.99999620397597
+        - 85.051
+      status: "on"
+    - id: "country-name"
+      name: "country-name"
+      srs: ""
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/country-name/3e1431a6-10m-admin-0-country-points.shp"
+        id: "country-name"
+        project: "geography-class-2"
+        srs: ""
+        type: "shape"
+      geometry: "point"
+    - id: "cities"
+      name: "cities"
+      srs: ""
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/cities/14bd1506-10m-populated-places-simple.shp"
+        type: "shape"
+      geometry: "point"
+    - id: "country-interaction"
+      name: "country-interaction"
+      srs: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+      class: ""
+      Datasource: 
+        file: "layers/country-interaction.geojson"
+        id: "country-interaction"
+        project: "geography-class"
+        srs: "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over"
+        type: "geojson"
+      geometry: "polygon"
+    - geometry: "point"
+      extent: 
+        - -179.589978883969
+        - -81.17908472282717
+        - 179.38330358817024
+        - 82.48332318035945
+      id: "pop"
+      class: ""
+      Datasource: 
+        file: "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/pop/741e372c-10m-populated-places.shp"
+        type: "shape"
+      layer: null
+      srs-name: "autodetect"
+      srs: ""
+      advanced: {}
+      name: "pop"
+    - geometry: "polygon"
+      extent: 
+        - 6.064453125
+        - 44.902577996288876
+        - 12.392578125
+        - 48.922499263758255
+      id: "circle"
+      class: ""
+      Datasource: 
+        file: "layers/round/POLYGON.shp"
+        id: "circle"
+        project: "geography-class-2"
+        srs: ""
+        type: "shape"
+      layer: null
+      srs-name: "autodetect"
+      srs: ""
+      advanced: {}
+      name: "circle"
+    - geometry: "polygon"
+      extent: 
+        - 1.9335937499999998
+        - 42.71473218539458
+        - 8.50341796875
+        - 49.42526716083716
+      id: "polygon"
+      class: ""
+      Datasource: 
+        file: "layers/rectangle/POLYGON.shp"
+        type: "shape"
+      layer: null
+      srs-name: "autodetect"
+      srs: ""
+      advanced: {}
+      name: "polygon"
+    - id: "paper"
+      name: "paper"
+      srs: "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+      class: ""
+      Datasource: 
+        file: "layers/world_extent_wgs84.geojson"
+        id: "paper"
+        srs: "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+        project: "geography-class-2"
+        type: "geojson"
+      geometry: "polygon"
+
