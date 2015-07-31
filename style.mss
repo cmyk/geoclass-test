@@ -298,11 +298,8 @@ Map {
 }*/
 
 #polygon {
-/*  line-color:#594;
-  line-width:0.5;*/
-  polygon-opacity:1;
-  polygon-fill:#ae8;
-  comp-op:dst-out;
+  polygon-fill:green;
+  polygon-comp-op:dst-out;
 }
 
 
