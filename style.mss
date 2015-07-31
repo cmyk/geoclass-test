@@ -236,13 +236,13 @@ Map {
 }
 
 /* Transparent PNG overlay for paper texture */
-#paper[zoom<2] { 
+/*#paper[zoom<2] {
   polygon-pattern-file:url(textures/paperfolds_256.png);
 }
-#paper[zoom>1] { 
+#paper[zoom>1] {
   polygon-pattern-file:url(textures/paperfolds_512.png);
 }
-
+*/
 
 /*#pop {
   marker-width:50;
@@ -285,20 +285,20 @@ Map {
   raster-scaling: bilinear;
 }
 
-
-/*#polygon {
-  line-color:#594;
-  line-width:0.5;
-  polygon-opacity:1;
-  polygon-fill:#ae8;
-  polygon-comp-op:src-out;
-}
-
-
 #circle {
   line-color:#594;
   line-width:0.5;
   polygon-opacity:1;
+  polygon-fill:#FF5010;
+  polygon-comp-op:src-in;
+}
+
+#polygon {
+  line-color:#594;
+  line-width:0.5;
+  polygon-opacity:1;
   polygon-fill:#ae8;
-  comp-op:overlay;
-}*/
+  polygon-comp-op:dst-in;
+}
+
+
