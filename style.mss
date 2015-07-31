@@ -87,7 +87,7 @@ the continents.
 
 /* Water bodies */
 Map { 
-  background-color: #aaa;
+  background-color: yellow;
 }
 
 /* Required to 'activate' the polygons for interactivity */
@@ -302,7 +302,7 @@ Map {
   line-width:0.5;*/
   polygon-opacity:1;
   polygon-fill:#ae8;
-  polygon-comp-op:dst-out;
+  comp-op:dst-out;
 }
 
 
