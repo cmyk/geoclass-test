@@ -299,7 +299,7 @@ Map {
 
 #polygon {
   polygon-fill:green;
-  comp-op:dst-out;
+  polygon-comp-op:dst-out;
 }
 
 
