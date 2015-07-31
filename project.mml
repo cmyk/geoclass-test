@@ -3,48 +3,6 @@
     {
       "status": "on",
       "layer": null,
-      "name": "terrain",
-      "srs-name": "WGS84",
-      "geometry": "gdal",
-      "class": "",
-      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
-      "Datasource": {
-        "type": "raster",
-        "file": "layers/terrain/SR_HR_retiled.tif"
-      },
-      "extent": [
-        -180,
-        -85.051,
-        180,
-        85.051
-      ],
-      "id": "terrain",
-      "advanced": {}
-    },
-    {
-      "status": "on",
-      "layer": null,
-      "name": "tint-bands",
-      "srs-name": "autodetect",
-      "geometry": "polygon",
-      "class": "",
-      "srs": "",
-      "Datasource": {
-        "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/tint-bands/82945364-10m-admin-0-countries.shp"
-      },
-      "extent": [
-        -179.99978348919964,
-        -85.051,
-        180,
-        83.63381093402977
-      ],
-      "id": "tint-bands",
-      "advanced": {}
-    },
-    {
-      "status": "on",
-      "layer": null,
       "name": "ocean",
       "srs-name": "autodetect",
       "geometry": "polygon",
@@ -52,7 +10,7 @@
       "srs": "",
       "Datasource": {
         "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/ocean/fd7da679-10m-ocean.shp"
+        "file": "layers/ocean/fd7da679-10m-ocean.shp"
       },
       "extent": [
         -179.99998938710382,
@@ -64,7 +22,7 @@
       "advanced": {}
     },
     {
-      "status": "on",
+      "status": "off",
       "layer": null,
       "name": "bath",
       "srs-name": "autodetect",
@@ -73,7 +31,7 @@
       "srs": "",
       "Datasource": {
         "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/bath/c22966e3-10m-bathymetry.shp"
+        "file": "layers/bath/c22966e3-10m-bathymetry.shp"
       },
       "extent": [
         -180,
@@ -93,8 +51,28 @@
       "id": "country",
       "Datasource": {
         "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/country/82945364-10m-admin-0-countries.shp"
+        "file": "layers/country/82945364-10m-admin-0-countries.shp"
       }
+    },
+    {
+      "layer": null,
+      "name": "polygon",
+      "srs-name": "WGS84",
+      "geometry": "polygon",
+      "id": "polygon",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "Datasource": {
+        "type": "shape",
+        "file": "layers/rectangle/POLYGON.shp"
+      },
+      "extent": [
+        -180,
+        -85.05112877980659,
+        180,
+        85.05112877980659
+      ],
+      "class": "",
+      "advanced": {}
     },
     {
       "status": "on",
@@ -105,7 +83,7 @@
       "id": "rivers",
       "Datasource": {
         "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/rivers/1b70dba2-10m-rivers-lake-centerlines.shp"
+        "file": "layers/rivers/1b70dba2-10m-rivers-lake-centerlines.shp"
       }
     },
     {
@@ -120,7 +98,7 @@
         "srs": null,
         "type": "shape",
         "id": "lakes",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/lakes/da493aa5-10m-lakes.shp"
+        "file": "layers/lakes/da493aa5-10m-lakes.shp"
       }
     },
     {
@@ -134,7 +112,7 @@
         "srs": "",
         "type": "shape",
         "id": "state",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/state/80b26bd1-10m-admin-1-states-provinces-lines.shp"
+        "file": "layers/state/80b26bd1-10m-admin-1-states-provinces-lines.shp"
       },
       "extent": [
         -139.0471919422785,
@@ -153,7 +131,7 @@
       "id": "admin-0-line-disputed",
       "Datasource": {
         "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/admin-0-line-disputed/d252fe6e-10m-admin-0-boundary-lines-claims.shp"
+        "file": "layers/admin-0-line-disputed/d252fe6e-10m-admin-0-boundary-lines-claims.shp"
       }
     },
     {
@@ -168,7 +146,7 @@
         "srs": "",
         "type": "shape",
         "id": "admin-0-line-land",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/admin-0-line-land/16c795c6-10m-admin-0-boundary-lines-land.shp"
+        "file": "layers/admin-0-line-land/16c795c6-10m-admin-0-boundary-lines-land.shp"
       }
     },
     {
@@ -180,7 +158,7 @@
       "id": "glacier",
       "Datasource": {
         "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/glacier/1938858a-10m-glaciated-areas.shp"
+        "file": "layers/glacier/1938858a-10m-glaciated-areas.shp"
       }
     },
     {
@@ -194,7 +172,7 @@
         "srs": "",
         "type": "shape",
         "id": "geo-lines",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/geo-lines/0d81b6b2-10m-geographic-lines.shp"
+        "file": "layers/geo-lines/0d81b6b2-10m-geographic-lines.shp"
       },
       "extent": [
         -180,
@@ -211,11 +189,11 @@
       "class": "",
       "id": "country-name",
       "Datasource": {
-        "project": "geography-class-2",
+        "project": "geoclass-test",
         "srs": "",
         "type": "shape",
         "id": "country-name",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/country-name/3e1431a6-10m-admin-0-country-points.shp"
+        "file": "layers/country-name/3e1431a6-10m-admin-0-country-points.shp"
       }
     },
     {
@@ -226,7 +204,7 @@
       "id": "cities",
       "Datasource": {
         "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/cities/14bd1506-10m-populated-places-simple.shp"
+        "file": "layers/cities/14bd1506-10m-populated-places-simple.shp"
       }
     },
     {
@@ -246,62 +224,19 @@
     {
       "layer": null,
       "name": "pop",
-      "srs-name": "autodetect",
+      "srs-name": "WGS84",
       "geometry": "point",
       "id": "pop",
-      "srs": "",
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
       "Datasource": {
         "type": "shape",
-        "file": "/Users/cmyk/Documents/MapBox/project/geography-class-2/layers/pop/741e372c-10m-populated-places.shp"
+        "file": "layers/pop/741e372c-10m-populated-places.shp"
       },
       "extent": [
-        -179.589978883969,
-        -81.17908472282717,
-        179.38330358817024,
-        82.48332318035945
-      ],
-      "class": "",
-      "advanced": {}
-    },
-    {
-      "layer": null,
-      "name": "circle",
-      "srs-name": "autodetect",
-      "geometry": "polygon",
-      "id": "circle",
-      "srs": "",
-      "Datasource": {
-        "project": "geography-class-2",
-        "srs": "",
-        "type": "shape",
-        "id": "circle",
-        "file": "layers/round/POLYGON.shp"
-      },
-      "extent": [
-        6.064453125,
-        44.902577996288876,
-        12.392578125,
-        48.922499263758255
-      ],
-      "class": "",
-      "advanced": {}
-    },
-    {
-      "layer": null,
-      "name": "polygon",
-      "srs-name": "autodetect",
-      "geometry": "polygon",
-      "id": "polygon",
-      "srs": "",
-      "Datasource": {
-        "type": "shape",
-        "file": "layers/rectangle/POLYGON.shp"
-      },
-      "extent": [
-        1.9335937499999998,
-        42.71473218539458,
-        8.50341796875,
-        49.42526716083716
+        -180,
+        -85.05112877980659,
+        180,
+        85.05112877980659
       ],
       "class": "",
       "advanced": {}
@@ -313,7 +248,7 @@
       "class": "",
       "id": "paper",
       "Datasource": {
-        "project": "geography-class-2",
+        "project": "geoclass-test",
         "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
         "type": "geojson",
         "id": "paper",
@@ -323,8 +258,30 @@
   ],
   "scale": 1,
   "attribution": "",
-  "name": "Geography Class 2",
-  "format": "png24",
+  "name": "Geogclass Test",
+  "format": "png8",
+  "_parts": {
+    "extents": {
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "extent": [
+        -180,
+        -85.05112877980659,
+        180,
+        85.05112877980659
+      ],
+      "srs-name": "900913"
+    },
+    "extents84": {
+      "srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",
+      "extent": [
+        -180,
+        -85.05112877980659,
+        180,
+        85.05112877980659
+      ],
+      "srs-name": "WGS84"
+    }
+  },
   "description": "One of the example maps that comes with TileMill - a bright & colorful world map that blends retro and high-tech with its folded paper texture and interactive flag tooltips. ",
   "metatile": 4,
   "bounds": [
@@ -336,8 +293,7 @@
   "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
   "Stylesheet": [
     "style.mss",
-    "labels.mss",
-    "rainbow.mss"
+    "labels.mss"
   ],
   "minzoom": 0,
   "maxzoom": 12,
