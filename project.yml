@@ -42,7 +42,7 @@ _parts:
 Stylesheet: 
   - "style.mss"
   - "labels.mss"
-  - "rainbow.mss"
+  # - "rainbow.mss"
 Layer: 
   # - id: "terrain"
   #   name: "terrain"
@@ -129,7 +129,7 @@ Layer:
     srs: ""
     advanced: {}
     name: "bath"
-    status: "on"
+    status: "off"
   - id: "country"
     name: "country"
     srs: ""
@@ -140,18 +140,18 @@ Layer:
     geometry: "polygon"
     status: "on"
 
-  - id: "circle"
-    name: "circle"
-    geometry: "polygon"
-    <<: *extents84
-    class: ""
-    Datasource: 
-      file: "layers/round/POLYGON.shp"
-      id: "circle"
-      srs: ""
-      type: "shape"
-    layer: null
-    advanced: {}
+  # - id: "circle"
+  #   name: "circle"
+  #   geometry: "polygon"
+  #   <<: *extents84
+  #   class: ""
+  #   Datasource:
+  #     file: "layers/round/POLYGON.shp"
+  #     id: "circle"
+  #     srs: ""
+  #     type: "shape"
+  #   layer: null
+  #   advanced: {}
   - id: "polygon"
     name: "polygon"
     geometry: "polygon"

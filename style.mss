@@ -285,20 +285,24 @@ Map {
   raster-scaling: bilinear;
 }
 
-#circle {
+#country {
+  polygon-fill:red;
+}
+
+/*#circle {
   line-color:#594;
   line-width:0.5;
   polygon-opacity:1;
   polygon-fill:#FF5010;
-  polygon-comp-op:src-in;
-}
+  polygon-comp-op:dst-out;
+}*/
 
 #polygon {
-  line-color:#594;
-  line-width:0.5;
+/*  line-color:#594;
+  line-width:0.5;*/
   polygon-opacity:1;
   polygon-fill:#ae8;
-  polygon-comp-op:dst-in;
+  polygon-comp-op:dst-out;
 }
 
 
