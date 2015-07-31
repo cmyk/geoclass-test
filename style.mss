@@ -271,24 +271,7 @@ Map {
   [zoom=4] { line-width: 8; }
   [zoom=5] { line-width: 12; }
   [zoom=6] { line-width: 17; }
-  [zoom>6] { line-width: 23; }
-}
-
-#terrain {
-  raster-opacity:1;
-  raster-scaling: bilinear;
-}
-
-#slope {
-  raster-opacity:1;
-  raster-comp-op:multiply;
-  raster-scaling: bilinear;
-}
-
-#country {
-  polygon-fill:red;
-}
-
+  [zoom>6] { line-width: 23; }*/
 /*#circle {
   line-color:#594;
   line-width:0.5;
